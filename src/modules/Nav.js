@@ -6,7 +6,7 @@ export default class extends module {
     constructor(m) {
         super(m);
         this.events = {
-            click: {
+            hover: {
               open: 'openNav',
               close: 'closeNav',
             }
