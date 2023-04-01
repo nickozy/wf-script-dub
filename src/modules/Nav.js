@@ -12,6 +12,9 @@ export default class extends module {
             // },
             mouseenter: {
               open: 'openNav', 
+            },
+            mouseleave: {
+              close: 'closeNav',
             }
           }
     }
