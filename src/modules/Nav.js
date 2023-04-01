@@ -6,10 +6,10 @@ export default class extends module {
     constructor(m) {
         super(m);
         this.events = {
-            click: {
-              open: 'openNav',
-              close: 'closeNav',
-            },
+            // click: {
+            //   open: 'openNav',
+            //   close: 'closeNav',
+            // },
             mouseenter: {
               open: 'openNav',
               close: 'closeNav',
