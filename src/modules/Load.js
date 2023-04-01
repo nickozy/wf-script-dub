@@ -15,8 +15,8 @@ export default class extends module {
         });
 
         load.on('loaded', (transition, oldContainer, newContainer) => {
-            navCheck();
             this.call('destroy', oldContainer, 'app');
+            navCheck();
             this.call('update', newContainer, 'app');
         });
 
