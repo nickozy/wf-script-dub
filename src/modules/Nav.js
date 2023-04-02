@@ -6,10 +6,9 @@ export default class extends module {
     constructor(m) {
         super(m);
         this.events = {
-            // click: {
-            //   open: 'openNav',
-            //   close: 'closeNav',
-            // },
+            click: {
+              toggle: 'toggleNavMob',
+            },
             mouseenter: {
               open: 'openNav',
               close: 'closeNav',
@@ -28,4 +27,8 @@ export default class extends module {
     closeNav(){
         nav.classList.remove("menu-open")
     }
+    toggleNavMob(){
+        nav.classList.toggle("menu-open")
+    }
+
 }
