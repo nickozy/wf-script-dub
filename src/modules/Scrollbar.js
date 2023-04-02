@@ -21,6 +21,7 @@ export default class extends module {
         });
     }
     updateScroll(){
+        console.log("click")
         const container = this.scrollbar; 
         container.scrollTop = 0;
         const elem = document.querySelector(".store-locator__filter")
