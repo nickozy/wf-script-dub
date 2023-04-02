@@ -7,8 +7,8 @@ export default class extends module {
         super(m);
         this.events = {
             click: {
-              // open: 'openNav',
-              // close: 'closeNav',
+              open: 'openNav',
+              close: 'closeNav',
             },
             mouseover: {
               open: 'openNav',
