@@ -12,12 +12,8 @@ export default class extends module {
             },
             mouseover: {
               open: 'openNav',
-              // close: 'closeNav',
-            },
-            mouseleave:{
               close: 'closeNav',
-
-            }
+            },
           }
     }
 
