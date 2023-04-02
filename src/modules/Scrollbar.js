@@ -21,14 +21,13 @@ export default class extends module {
         });
     }
     updateScroll(){
-        console.log("click")
-        const container = this.scrollbar; 
+        const container =  document.querySelector(".is-store-locator"); 
         container.scrollTop = 0;
-        const elem = document.querySelector(".store-locator__filter")
+        const elem = document.querySelector(".store-locator__filter");
         elem.classList.remove("is-open")
     }
     openScroll(){
-        const elem = document.querySelector(".store-locator__filter")
-        elem.classList.toggle("is-open")
+        const elem = document.querySelector(".store-locator__filter");
+        elem.classList.toggle("is-open");
     }
 }
