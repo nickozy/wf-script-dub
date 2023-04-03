@@ -13,4 +13,4 @@ export default class extends module {
         let videoEl = document.getElementsByTagName('video')[0];
         videoEl.muted = false;
 }
-}
+}  
