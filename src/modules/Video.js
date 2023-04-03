@@ -5,7 +5,7 @@ export default class extends module {
         super(m);
         this.events = {
             click: {
-              click: 'toggle',
+              toggle: 'toggle',
             }
           }
     }
