@@ -11,6 +11,6 @@ export default class extends module {
     }
     toggle(){
         let videoEl = document.getElementsByTagName('video')[0];
-        videoEl.muted = false;
+        videoEl.muted = (videoEl.muted == false) ? true : false;
 }
 }  
