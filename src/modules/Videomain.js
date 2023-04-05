@@ -6,6 +6,11 @@ export default class extends module {
     }
     init(){
         const el = this.el
+        console.log(el)
+        console.log(el)
+        console.log(el4)
+        console.log(el3)
+        console.log(el2)
     if(window.innerWidth > 767){
         el.setAttribute("src", "https://data.d.starterapp.co/api/v1/buckets/breadhead/objects/download?preview=true&prefix=ZHViX2NhbXBhaWduLWRlc2t0b3AubXA0&version_id=null")
     }
