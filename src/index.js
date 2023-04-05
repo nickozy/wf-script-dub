@@ -5,6 +5,13 @@ import { html } from "./utils/environment";
 // import config from "./config";
 // import { isFontLoadingAPIAvailable, loadFonts } from "./utils/fonts";
 
+const appHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty("--vh", `${window.innerHeight}px`);
+};
+// window.addEventListener("resize", appHeight);
+appHeight();
+
 const app = new modular({
   modules: modules,
 });
@@ -25,10 +32,10 @@ window.onload = (event) => {
   }
 };
 
-export const EAGER_FONTS = [
-  { family: "Source Sans", style: "normal", weight: 400 },
-  { family: "Source Sans", style: "normal", weight: 700 },
-];
+// export const EAGER_FONTS = [
+//   { family: "Source Sans", style: "normal", weight: 400 },
+//   { family: "Source Sans", style: "normal", weight: 700 },
+// ];
 
 function init() {
   // globals();
