@@ -1,0 +1,77 @@
+<style>
+  :root{
+    --col: 5;
+    --gap: 1.25;
+    --width-col: 12.5;
+  }
+
+
+  @media screen and (max-width: 479px){
+    :root{
+      --col: 2;
+      --gap: 5;
+      --width-col: 40;
+    }
+  }
+  
+  
+   @media screen and (min-width: 1920px){
+    :root{
+      --col: 10;
+      --gap: 1.25;
+      --width-col: 10.42;
+    }
+  }
+  
+
+.swiper-scrollbar-drag{
+		height: 2px !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    top: auto !important; 
+    bottom: 0;
+    position: absolute !important;
+}
+
+
+.swiper{
+	max-width: calc(calc(var(--gap) * 1vw * calc(var(--col) - 1)) + calc(var(--width-col) * 1vw * var(--col)));
+  }
+  
+  
+.swiper-slide{
+	height: calc(200vw / 16) !important;
+}
+
+.swiper-wrapper{
+	height: calc(calc((200vw / 16) * 2) + calc(20vw / 16));
+}
+
+@media screen and (max-width: 479px){
+  .swiper-slide{
+    height: calc(128vw / 3.2) !important;
+  }
+  .swiper-wrapper{
+    height: calc(calc((128vw / 3.2) * 4) + calc(calc(16vw / 3.2)*3));
+  }
+}
+
+
+
+@media screen and (min-width: 1920px){
+  .swiper-slide{
+    height: calc(200vw / 19.2) !important;
+  }
+  .swiper-wrapper{
+	height: calc(200vw / 19.2);
+  }
+}
+
+
+
+
+.swiper-slide:hover .img-brand{
+	transform: scale(1.1);
+	opacity: 1;
+}
+</style>
