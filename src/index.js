@@ -1,9 +1,7 @@
 import modular from "modujs";
 import * as modules from "./modules";
-// import globals from "./globals";
-import { html } from "./utils/environment";
-// import config from "./config";
-// import { isFontLoadingAPIAvailable, loadFonts } from "./utils/fonts";
+
+const html = document.documentElement;
 
 const appHeight = () => {
   const doc = document.documentElement;
@@ -32,14 +30,7 @@ window.onload = (event) => {
   }
 };
 
-// export const EAGER_FONTS = [
-//   { family: "Source Sans", style: "normal", weight: 400 },
-//   { family: "Source Sans", style: "normal", weight: 700 },
-// ];
-
 function init() {
-  // globals();
-
   app.init(app);
 
   html.classList.add("is-loaded");
