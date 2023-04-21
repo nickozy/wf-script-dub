@@ -84,7 +84,7 @@ function init() {
         // Необходимо указать данный тип макета.
         iconLayout: 'default#imageWithContent',
         // Своё изображение иконки метки.
-        iconImageHref: '',
+        iconImageHref: 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/644290833ed23269a4a42bec_Map%20Pin.svg',
         // Размеры метки.
         iconImageSize: [56, 56],
         // Смещение левого верхнего угла иконки относительно
