@@ -127,21 +127,21 @@ function init() {
     console.log(target.properties.get('url'))
 
 
-    const elem = document.querySelector("#ajax-container");
+    // const elem = document.querySelector("#ajax-container");
 
-    elem.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      });
+    // elem.scrollTo({
+    //     top: 0,
+    //     left: 0,
+    //     behavior: "smooth"
+    //   });
   
-    $(".popup-store").addClass('is-open')
-    const postURL = target.properties.get('url');
-    console.log(postURL);
-    loadDoc(postURL);
-    function loadDoc(postURL) {
-      $("#ajax-container").load(postURL + " #modal-content");
-    }
+    // $(".popup-store").addClass('is-open')
+    // const postURL = target.properties.get('url');
+    // console.log(postURL);
+    // loadDoc(postURL);
+    // function loadDoc(postURL) {
+    //   $("#ajax-container").load(postURL + " #modal-content");
+    // }
   });  
   
   
