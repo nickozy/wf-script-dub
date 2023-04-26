@@ -16,8 +16,9 @@ export default class extends module {
 
         load.on('loaded', (transition, oldContainer, newContainer) => {
             this.call('destroy', oldContainer, 'app');
-            navCheck();
             this.call('update', newContainer, 'app');
+            navCheck();
+            videoLoad();
         });
 
         
@@ -27,5 +28,10 @@ export default class extends module {
             main.classList.remove('menu-open');
             
         }
+
+        function videoLoad(){
+            document.documentElement.classList.remove("video-load");
+                    
+                }
     }
 }
