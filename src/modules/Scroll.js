@@ -4,7 +4,12 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 export default class extends module {
     constructor(m) {
-        super(m);
+        super(m)
+        this.events = {
+            click: {
+                open: "toggleSection"
+            }
+        }
     }
 
     init() {
@@ -54,4 +59,17 @@ export default class extends module {
     destroy() {
         this.scroll.destroy();
     }
+
+
+    toggleSection(e) {
+        const target = e.currentTarget;
+        const section = this.parent('section', target);
+    
+        if (section.classList.contains('is-open')) {
+          section.classList.remove('is-open');
+        } else {
+          section.classList.add('is-open');
+        }
+        setTimeout(()=>{this.scroll.update()}, 0)
+      }
 }
