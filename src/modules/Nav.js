@@ -13,7 +13,7 @@ export default class extends module {
               open: 'openNav',
               close: 'closeNav',
               edu: 'openEdu',
-              educlose: 'closeEdu',
+              educlose: 'closeEdu', 
             },
           }
     }
@@ -29,11 +29,12 @@ export default class extends module {
             nav.classList.add('menu-open--edu');
     }
     closeEdu(){
-            nav.classList.remove('menu-open--edu');
+          nav.classList.remove('menu-open--edu');
     }
     
     closeNav(){
-        nav.classList.remove("menu-open")
+        nav.classList.remove("menu-open");
+        nav.classList.remove("menu-open--edu")
     }
     toggleNavMob(){
         nav.classList.toggle("menu-open")
