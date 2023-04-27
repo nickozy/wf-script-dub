@@ -13,6 +13,7 @@ export default class extends module {
               open: 'openNav',
               close: 'closeNav',
               edu: 'openEdu',
+              eduClose: 'closeEdu',
             },
           }
     }
@@ -25,11 +26,10 @@ export default class extends module {
           }
     }
     openEdu(){
-        if (nav.classList.contains('menu-open--edu')) {
-            nav.classList.remove('menu-open--edu');
-          } else {
             nav.classList.add('menu-open--edu');
-          }
+    }
+    closeEdu(){
+            nav.classList.remove('menu-open--edu');
     }
     
     closeNav(){
