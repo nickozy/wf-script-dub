@@ -13,7 +13,7 @@ export default class extends module {
               open: 'openNav',
               close: 'closeNav',
               edu: 'openEdu',
-              eduClose: 'closeEdu',
+              educlose: 'closeEdu',
             },
           }
     }
