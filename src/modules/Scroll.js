@@ -64,12 +64,12 @@ export default class extends module {
     toggleSection(e) {
         const target = e.currentTarget;
         const section = this.parent('section', target);
-        const section2 = document.querySelector('.faq__list-wrapper');
+        // const section2 = $('.faq__list-wrapper');
     
         if (section.classList.contains('is-open')) {
           section.classList.remove('is-open');
         } else {
-            section2.classList.remove('is-open');
+            $('.faq__list-wrapper').removeClass('is-open');
             section.classList.add('is-open');
         }
         setTimeout(()=>{this.scroll.update()}, 0)
