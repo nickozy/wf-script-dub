@@ -68,7 +68,7 @@ export default class extends module {
         if (section.classList.contains('is-open')) {
           section.classList.remove('is-open');
         } else {
-            this.$('section.is-open').classList.remove('is-open');
+            $('section.is-open').classList.remove('is-open');
             section.classList.add('is-open');
         }
         setTimeout(()=>{this.scroll.update()}, 0)
