@@ -12,6 +12,7 @@ export default class extends module {
             mouseenter: {
               open: 'openNav',
               close: 'closeNav',
+              edu: 'openEdu',
             },
           }
     }
@@ -21,6 +22,13 @@ export default class extends module {
             nav.classList.remove('menu-open');
           } else {
             nav.classList.add('menu-open');
+          }
+    }
+    openEdu(){
+        if (nav.classList.contains('menu-open--edu')) {
+            nav.classList.remove('menu-open--edu');
+          } else {
+            nav.classList.add('menu-open--edu');
           }
     }
     
