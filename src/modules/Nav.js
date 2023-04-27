@@ -8,6 +8,7 @@ export default class extends module {
         this.events = {
             click: {
               toggle: 'toggleNavMob',
+              clickedu: 'toggleEdu',
             },
             mouseenter: {
               open: 'openNav',
@@ -19,6 +20,13 @@ export default class extends module {
     }
 
     openNav(){
+        if (nav.classList.contains('menu-open')) {
+            nav.classList.remove('menu-open');
+          } else {
+            nav.classList.add('menu-open');
+          }
+    }
+    toggleEdu(){
         if (nav.classList.contains('menu-open')) {
             nav.classList.remove('menu-open');
           } else {
