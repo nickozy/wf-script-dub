@@ -8,13 +8,10 @@ export default class extends module {
   }
 
   init() {
-
-    console.log("true");
     setTimeout(()=>{
       FsAttributes.cmsfilter.destroy();
       FsAttributes.cmsfilter.init();
     }, 50)
-   
 
   }  
 }
