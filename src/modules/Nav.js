@@ -27,10 +27,10 @@ export default class extends module {
           }
     }
     toggleEdu(){
-        if (nav.classList.contains('menu-open menu-open--edu')) {
-            nav.classList.remove('menu-open menu-open--edu');
+        if (nav.classList.contains('menu-open', 'menu-open--edu')) {
+            nav.classList.remove('menu-open', 'menu-open--edu');
           } else {
-            nav.classList.add('menu-open menu-open--edu');
+            nav.classList.add('menu-open', 'menu-open--edu');
           }
     }
     openEdu(){
