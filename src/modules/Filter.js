@@ -8,11 +8,11 @@ export default class extends module {
   }
 
   init() {
-window.onload = () => {
+    if(document.documentElement.classList.contains("is-ready")){
     setTimeout(()=>{
       FsAttributes.cmsfilter.destroy();
       FsAttributes.cmsfilter.init();
     }, 50)
   }
-  }  
+}
 }
