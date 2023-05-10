@@ -9,6 +9,7 @@ export default class extends module {
             click: {
               toggle: 'toggleNavMob',
               clickedu: 'toggleEdu',
+              maptoggle: "toggleMap"
             },
             mouseenter: {
               open: 'openNav',
@@ -18,6 +19,15 @@ export default class extends module {
             },
           }
     }
+
+    toggleMap(){
+      
+      if (nav.classList.contains('map-show')) {
+          nav.classList.remove('map-show');
+        } else {
+          nav.classList.add('map-show');
+        }
+  }
 
     openNav(){
         if (nav.classList.contains('menu-open')) {
