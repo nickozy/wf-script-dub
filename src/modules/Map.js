@@ -98,7 +98,7 @@ export default class extends module {
               // Необходимо указать данный тип макета.
               iconLayout: 'default#imageWithContent',
               // Своё изображение иконки метки.
-              iconImageHref: 'https://uploads-ssl.webflow.com/640dfc44890e1e178b3b2f19/6449f3ca43a6861b851a4938_vilet-pin.svg',
+              iconImageHref: 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/645adf0f046e973cddac8c59_dub-pin.svg',
               // Размеры метки.
               iconImageSize: [56, 56],
               // Смещение левого верхнего угла иконки относительно
@@ -168,10 +168,10 @@ export default class extends module {
 
           cityCollection.events.add('click', function(e) {
             if (activePlacemark) {
-              activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/640dfc44890e1e178b3b2f19/6449f3ca43a6861b851a4938_vilet-pin.svg')
+              activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/645adf0f046e973cddac8c59_dub-pin.svg')
             }
             activePlacemark = e.get('target');
-            activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/640dfc44890e1e178b3b2f19/645ada30feec4875e28ff7a4_vilet-pin--active.svg')
+            activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/645adf0f205bc7d3dc39fee6_dub-pin--active.svg')
           })
         }
 
@@ -289,10 +289,10 @@ export default class extends module {
 
           if (elementCenter[0] === loc[0] && elementCenter[1] === loc[1]) {
             if (activePlacemark) {
-              activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/640dfc44890e1e178b3b2f19/6449f3ca43a6861b851a4938_vilet-pin.svg')
+              activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/645adf0f046e973cddac8c59_dub-pin.svg')
             }
             activePlacemark = element
-            activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/640dfc44890e1e178b3b2f19/645ada30feec4875e28ff7a4_vilet-pin--active.svg')
+            activePlacemark.options.set('iconImageHref', 'https://uploads-ssl.webflow.com/641020650b8f973d572415c3/645adf0f205bc7d3dc39fee6_dub-pin--active.svg')
             return true;
           } else {
             return false;
