@@ -150,6 +150,7 @@ export default class extends module {
                 const currentShopEl = document.getElementById(shopName)?.parentNode
 
                 currentShopEl.classList.add('active')
+                currentShopEl.scrollIntoView()
                 currentCityEl.classList.add('fs-cmsfilter_active')
               }, 200)
             });
