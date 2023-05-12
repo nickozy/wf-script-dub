@@ -21,7 +21,7 @@ export default class extends module {
         });
     }
     updateScroll(){
-        const container =  this.el; 
+        const container =  document.querySelector(".is-store"); 
         container.scrollTop = 0;
         const elem = document.querySelector(".store-locator__filter");
         elem.classList.remove("is-open")
