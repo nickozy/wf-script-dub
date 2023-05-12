@@ -131,7 +131,7 @@ export default class extends module {
                 mobileShopInfoTitle.textContent = currentShopEl.attributes['data-shop'].value
                 mobileShopInfoStreet.textContent = currentShopEl.attributes['data-address'].value
                 mobileShopInfoPhone.textContent = currentShopEl.attributes['data-phone'].value
-                mobileShopInfoPhone.setAttribute('href', "tel" + currentShopEl.attributes['data-phone'].value); 
+                mobileShopInfoPhone.setAttribute(href, "tel" + currentShopEl.attributes['data-phone'].value); 
                 mobileShopInfoWorkTime.innerHTML = currentShopEl.querySelector('.address_work-time').outerHTML
                 currentShopEl.attributes['data-opening'].value === 'УЖЕ ОТКРЫТ'
                     ? mobileShopInfoOpening.classList.remove('adress__item-tag--active')
