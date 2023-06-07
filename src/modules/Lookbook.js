@@ -10,13 +10,13 @@ export default class extends module {
         const el = this.el;
 
         this.swiper = new Swiper(el.querySelector(".swiper"), {
-           module: [Navigation],
+           modules: [Navigation],
            speed: 600,
            spaceBetween: 0,
            slidesPerView: 'auto',
            navigation: {
-            nextEl:  el.querySelector(".lookbook__arrow.lookbook__arrow--next"),
-            prevEl:  el.querySelector(".lookbook__arrow.lookbook__arrow--prev"),
+            nextEl:  el.querySelector(".lookbook__arrow--next"),
+            prevEl:  el.querySelector(".lookbook__arrow--prev"),
           },
         });
     }
