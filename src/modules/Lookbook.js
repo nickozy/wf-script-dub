@@ -15,8 +15,8 @@ export default class extends module {
            spaceBetween: 0,
            slidesPerView: 'auto',
            navigation: {
-            prevEl: el.querySelector(".lookbook__arrow--prev"),
-            nextEl: el.querySelector(".lookbook__arrow--next")
+            prevEl: el.document.querySelector(".lookbook__arrow--prev"),
+            nextEl: el.document.querySelector(".lookbook__arrow--next")
            }
         });
     }
