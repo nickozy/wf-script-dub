@@ -8,16 +8,16 @@ export default class extends module {
 
     init() {
         const el = this.el;
-        const slider = el.querySelector(".swiper");
-        this.swiper = new Swiper(slider, {
+        
+        this.swiper = new Swiper(el.querySelector(".swiper"), {
             module: [Navigation],
            speed: 600,
            spaceBetween: 0,
            slidesPerView: 'auto',
            navigation: {
-            prevEl: ".lookbook__arrow--prev",
-            nextEl: ".lookbook__arrow--next"
-           }
+            nextEl:  el.querySelector(".lookbook__arrow--next"),
+            prevEl:  el.querySelector(".lookbook__arrow--prev"),
+          },
         });
     }
 }
