@@ -6,3 +6,4 @@ export { default as Filter } from "./modules/Filter";
 export { default as Video } from "./modules/Video";
 export { default as Videomain } from "./modules/Videomain";
 export { default as Map } from "./modules/Map";
+export { default as Lookbook } from "./modules/Lookbook";
