@@ -5,9 +5,12 @@ export default class extends module {
         super(m);
     }
     init(){
-class VideoResponser {
-    constructor(selector) {
-        const $video = document.querySelector(selector);
+
+        document.documentElement.classList.add("video-load");
+// class VideoResponser {
+    // constructor(selector) {
+const selector = this.el
+        const $video = selector;
         this.options = { 
             selector, 
             breakpoints: { default: { src: $video.getAttribute('data-src') } } 
@@ -21,6 +24,7 @@ class VideoResponser {
         this.responseVideo(this.options);
         this.resizer();
     }
+    
 
     /** Function runs on resize  */
     resizer() {
@@ -34,7 +38,7 @@ class VideoResponser {
      */
     responseVideo(options) {
         const {selector, breakpoints} = options; // get options
-        let $video = document.querySelector(selector);
+        let $video = selector;
         const widthNow = $video.getAttribute('data-width-now') || null;
         const maxBreakpoint = Math.max.apply(Math, Object.keys(breakpoints).filter(key => key <= document.body.clientWidth).map(Number));
         const nowBreakpoint = maxBreakpoint || 'default'; // choose either the maximum value, if not, then the default 
@@ -44,15 +48,6 @@ class VideoResponser {
         $video.setAttribute('data-width-now', nowBreakpoint);
         $video.src = breakpoints[nowBreakpoint].src;
     }
+  
+    
 }
-
-
-
-new VideoResponser('video');
-
-var vid = document.querySelector("video");
-vid.oncanplay = function() {
-    document.documentElement.classList.add("video-load");
-};
-    }
-}  
