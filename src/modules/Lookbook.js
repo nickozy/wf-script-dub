@@ -16,6 +16,7 @@ export default class extends module {
            rewind: true,
            slidesPerGroup: 1,
            slidesPerView: 'auto',
+           grabCursor: true,
            navigation: {
             nextEl:  el.querySelector(".lookbook__arrow--next"),
             prevEl:  el.querySelector(".lookbook__arrow--prev"),
