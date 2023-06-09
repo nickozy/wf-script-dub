@@ -22,7 +22,6 @@ export default class extends module {
           },
           breakpoints: {
             767: {
-              slidesPerView: 2,
               slidesPerGroup: 2,
             },
         }
