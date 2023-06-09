@@ -14,11 +14,18 @@ export default class extends module {
            speed: 600,
            spaceBetween: 0,
            rewind: true,
+           slidesPerGroup: 1,
            slidesPerView: 'auto',
            navigation: {
             nextEl:  el.querySelector(".lookbook__arrow--next"),
             prevEl:  el.querySelector(".lookbook__arrow--prev"),
           },
+          breakpoints: {
+            767: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+        }
         });
     }
 }
