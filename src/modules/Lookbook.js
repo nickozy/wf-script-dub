@@ -13,6 +13,7 @@ export default class extends module {
            modules: [Navigation],
            speed: 600,
            spaceBetween: 0,
+           rewind: true,
            slidesPerView: 'auto',
            navigation: {
             nextEl:  el.querySelector(".lookbook__arrow--next"),
