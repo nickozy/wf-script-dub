@@ -1,7 +1,7 @@
 import { GradientMorph } from "@leon/gradient-morph";
 
 
-GradientMorph.init()
+GradientMorph
 
 export default class extends module {
   constructor(m) {
