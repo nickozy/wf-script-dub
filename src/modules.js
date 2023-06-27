@@ -8,3 +8,4 @@ export { default as Videomain } from "./modules/Videomain";
 export { default as Map } from "./modules/Map";
 export { default as Lookbook } from "./modules/Lookbook";
 export { default as Playv } from "./modules/Playv";
+export { default as GradientMorph } from "./modules/GradientMorph";
