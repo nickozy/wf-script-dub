@@ -8,6 +8,6 @@ export default class extends module {
   }
 
   init() {
-   this.GradientMorph = new GradientMorph()
+   GradientMorph()
 }
 }
